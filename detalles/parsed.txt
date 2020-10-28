@@ -1,0 +1,74 @@
+<p>&check;ABS</p>
+<p>&check;Adaptive cornering lights</p>
+<p>&check;Adaptive Cruise Control</p>
+<p>&check;Airbags delanteros, laterales y otros</p>
+<p>&check;Alarm system</p>
+<p>&check;Ambient lighting</p>
+<p>&check;Android Auto</p>
+<p>&check;Apple CarPlay</p>
+<p>&check;Arm rest</p>
+<p>&check;Asientos deportivos</p>
+<p>&check;Asientos eléctricos con calefacción</p>
+<p>&check;Asientos ventilados</p>
+<p>&check;Autom. dimming interior mirror</p>
+<p>&check;Automatic climatisation, 4 zones</p>
+<p>&check;Blind spot assist</p>
+<p>&check;Bluetooth</p>
+<p>&check;Cargo barrier</p>
+<p>&check;Cierre centralizado</p>
+<p>&check;Control de tracción</p>
+<p>&check;DAB radio</p>
+<p>&check;Digital cockpit</p>
+<p>&check;Dirección asistida</p>
+<p>&check;Distance warning system</p>
+<p>&check;Electric heated rear seats</p>
+<p>&check;Electric tailgate</p>
+<p>&check;Elevalunas eléctrico</p>
+<p>&check;Emergency brake assist</p>
+<p>&check;Emergency call system</p>
+<p>&check;Equipamiento deportivo</p>
+<p>&check;ESP</p>
+<p>&check;faro antiniebla</p>
+<p>&check;Fatigue warning system</p>
+<p>&check;Funda para esquís</p>
+<p>&check;Garantía</p>
+<p>&check;Glare-free high beam headlights</p>
+<p>&check;High beam assist</p>
+<p>&check;Hill-start assist</p>
+<p>&check;Inmovilizador eléctrico</p>
+<p>&check;Isofix (puntos de anclaje del asiento para niños)</p>
+<p>&check;Kit de manos libres</p>
+<p>&check;Laser headlights</p>
+<p>&check;Leather steering wheel</p>
+<p>&check;LED running lights</p>
+<p>&check;Lumbar support</p>
+<p>&check;Ordenador de a bordo</p>
+<p>&check;Paddle shifters</p>
+<p>&check;Pantalla de visualización frontal</p>
+<p>&check;Portaequipaje</p>
+<p>&check;Regulación eléctrica de los asientos</p>
+<p>&check;Retrovisor lateral eléctrico</p>
+<p>&check;Ruedas ligeras</p>
+<p>&check;Sensor de lluvia</p>
+<p>&check;Sensor de luz</p>
+<p>&check;Sintonizador/radio</p>
+<p>&check;Sistema de aviso de abandono de carril</p>
+<p>&check;Sistema de detención y arranque</p>
+<p>&check;Sistema de entrada sin llave</p>
+<p>&check;Sistema de navegación</p>
+<p>&check;Sound system</p>
+<p>&check;Speed limit control system</p>
+<p>&check;Summer tyres</p>
+<p>&check;Suspensión deportiva</p>
+<p>&check;Suspensión neumática</p>
+<p>&check;Tarjeta de inspección técnica de vehículos (ITV)</p>
+<p>&check;Techo corredizo</p>
+<p>&check;Techo panorámico</p>
+<p>&check;Touchscreen</p>
+<p>&check;Tracción a las cuatro ruedas</p>
+<p>&check;Traffic sign recognition</p>
+<p>&check;Tyre pressure monitoring</p>
+<p>&check;USB port</p>
+<p>&check;Vehículo de no fumador</p>
+<p>&check;Voice control</p>
+<p>&check;Volante multifunción</p>
