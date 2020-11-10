@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<style>
+
+  body {
+    background-color: black;
+  }
+
+  .row {
+    background-color: black;
+  }
+
+  .slider {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .pic {
+    width: 300px;
+    height: auto;
+    position: relative;
+  }
+
+  .pic-container {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    padding: 10px;
+    position: relative;
+  }
+
+  .pic > img{
+    width: 300px;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .prev, .next {
+    height: fit-content;
+    position: relative;
+    top: 120px;
+    color: white;
+  }
+
+  .prev:hover, .next:hover {
+   cursor: pointer;
+  }
+
+
+</style>
+<html>
+  <head>
+    <title>SLIDER</title>
+  </head>
+  <body>
+
+    <div class="demo">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="prev">&#10094;</div>
+          
+
+          <div class="slider">
+
+            
+
+            <div class="pic-container" style="order: 0;">
+              <div class="pic">
+                <img src="detalles/imagenes/bmw-m4/1.jpeg">
+              </div>
+              <h3 class="title">BMW M4</h3>
+            </div>
+
+            <div class="pic-container" style="order: 1;">
+              <div class="pic">
+                <img src="detalles/imagenes/bmw-m4/2.jpeg">
+              </div>
+              <h3 class="title">BMW M4</h3>
+            </div>
+
+            <div class="pic-container" style="order: 2;">
+              <div class="pic">
+                <img src="detalles/imagenes/bmw-m4/3.jpeg">
+              </div>
+              <h3 class="title">BMW M4</h3>
+            </div>
+
+            <div class="pic-container" style="order: 3;">
+              <div class="pic">
+                <img src="detalles/imagenes/bmw-m4/4.jpeg">
+              </div>
+              <h3 class="title">BMW M4</h3>
+            </div>
+
+            <div class="pic-container" style="order: 4;">
+              <div class="pic">
+                <img src="detalles/imagenes/bmw-m4/5.jpeg">
+              </div>
+              <h3 class="title">BMW M4</h3>
+            </div>
+
+            <div class="pic-container" style="order: 5;">
+              <div class="pic">
+                <img src="detalles/imagenes/bmw-m4/6.jpeg">
+              </div>
+              <h3 class="title">BMW M4</h3>
+            </div>
+
+            <div class="pic-container" style="order: 6;">
+              <div class="pic">
+                <img src="detalles/imagenes/bmw-m4/7.jpeg">
+              </div>
+              <h3 class="title">BMW M4</h3>
+            </div>
+
+            <div class="pic-container" style="order: 7;">
+              <div class="pic">
+                <img src="detalles/imagenes/bmw-m4/8.jpeg">
+              </div>
+              <h3 class="title">BMW M4</h3>
+            </div>
+
+            <div class="pic-container" style="order: 8;">
+              <div class="pic">
+                <img src="detalles/imagenes/bmw-m4/9.jpeg">
+              </div>
+              <h3 class="title">BMW M4</h3>
+            </div>
+
+          </div>
+
+          <div class="next">&#10095;</div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+
+  function scrollRight() {
+    const pic = document.querySelectorAll(".pic-container");
+    pic.forEach(element => {
+      const style = getComputedStyle(element)
+      let order = style.getPropertyValue('order')
+      if (order-1 < 0) {
+        element.style.order = pic.length-1
+      } else {
+        element.style.order = order-1
+      }
+    })
+  }
+
+  function scrollLeft() {
+    const pic = document.querySelectorAll(".pic-container");
+    pic.forEach(element => {
+      const style = getComputedStyle(element)
+      let order = parseInt(style.getPropertyValue('order'))
+      if (order+1 >= pic.length) {
+        element.style.order = 0;
+      } else {
+        element.style.order = order+1
+      }
+    })
+  }
+
+  const next = document.querySelector(".next");
+  next.addEventListener('click',scrollRight);
+
+  const prev = document.querySelector(".prev");
+  prev.addEventListener('click',scrollLeft);
+
+</script>

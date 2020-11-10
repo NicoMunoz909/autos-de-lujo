@@ -1,34 +1,392 @@
 <!DOCTYPE html>
 <style>
   body {
-    font-family: 'Audiowide', cursive;
-    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    background-color: #191919;
     text-align: center;
     color: white;
+    margin: 0;
+    width: 100%;
+    background-image: url("detalles/imagenes/fondo.jpg");
   }
-  a {
-    display: inline-block;
-    text-align: center;
-    font-size: 7vh;
-    background-color: white;
-    color: black;
-    height: 20vh;
-    line-height: 20vh;
-    width: 30vw;
-    margin: auto;
-    margin-top: 40vh;
-    border-radius: 50%;
+
+  nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav > .titulo {
+    width: fit-content;
+    padding-left: 3vw;
+  }
+
+  nav > .links {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 2vh;
+    padding-left: 1vw;
+    padding-right: 3vw;
+    display: flex;
+    width: fit-content;
+
+  }
+
+  .links > a {
+    margin-left: 2vw;
+    color: white;
+    font-weight: 900;
     text-decoration: none;
-    text-shadow: -1px -2px 1px rgb(151, 151, 151) ;
   }
+
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .bienvenidos {
+    display: flex;
+    background-color: black;
+    margin-top: 20vh;
+  }
+
+  .bienvenidos > div {
+    margin: auto;
+  }
+
+  .bienvenidos > div > h2 {
+    font-size: 30px;
+  }
+
+  .bienvenidos > img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .catalogo {
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+  }
+
+  .catalogo > h2 {
+    padding-top: 20px;
+  }
+
+  .row {
+    background-color: black;
+  }
+
+  .slider {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .pic {
+    width: 315px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pic-container {
+    text-align: left;
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+    position: relative;
+  }
+
+  .pic-container > h3 {
+    background-color: #191919;
+    border: 1px solid #191919;
+    margin-top: 0;
+    opacity: 0.3;
+  }
+
+  .pic > a > img{
+    width: 315px;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .prev, .next {
+    height: fit-content;
+    position: relative;
+    top: 120px;
+    color: white;
+  }
+
+  .prev:hover, .next:hover {
+   cursor: pointer;
+  }
+
+  .info {
+    margin-top: 100px;
+    background-color: black;
+    font-weight: bold;
+  }
+
+  .info-container {
+    padding: 30px 0 30px 0;
+    overflow: hidden;
+  }
+
+  .info-container > .img-container {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .info-container > .img-container > img {
+    position: absolute;
+    width: 1920px;
+    height: auto;
+    top: -610px;
+    left: -195px;
+  }
+
+  footer {
+    margin: 100px 0 0 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  .redes {
+    display: flex;
+  }
+
+  .redes > a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .redes >a:hover {
+    text-decoration: none;
+  }
+
 </style>
 <html>
+
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <title>Autos de super lujo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Autos super lujo</title>
   </head>
+
+  <nav>
+    <div class="titulo">
+      <h1>AUTOS SUPER LUJO</h1>
+    </div>
+    <div class="links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#sobre-nosotros">Sobre Nosotros</a>
+    </div>
+  </nav>
+
   <body>
-    <h1>AUTOS DE SUPER LUJO</h1>
-    <a id="catalogo" href="catalogo.html">CATALOGO</a>
+
+    <div class="bienvenidos">
+      <img src="detalles/imagenes/inicio.jpg">
+      <div>
+        <h2>BIENVENIDOS A AUTOS SUPER LUJO</h2>
+        <p>Encuentre su vehículo ideal</p>
+      </div>
+    </div>
+
+    <div class="catalogo" id="catalogo">
+
+      <h2>NUESTRO CATÁLOGO</h2>
+
+      <div class="row">
+        <div class="prev">&#10094;</div>
+  
+        <div class="slider">
+
+          <div class="pic-container" style="order: 0;">
+            <div class="pic">
+              <a href="detalles/bmw-m4.html"><img src="detalles/imagenes/bmw-m4/1.jpeg"></a>
+            </div>
+            <h3 class="title">BMW M4</h3>
+          </div>
+
+          <div class="pic-container" style="order: 1;">
+            <div class="pic">
+              <a href="detalles/bmw-x6m.html"><img src="detalles/imagenes/bmw-x6m/1.jpeg"></a>
+            </div>
+            <h3 class="title">BMW X6M</h3>
+          </div>
+
+          <div class="pic-container" style="order: 2;">
+            <div class="pic">
+              <a href="detalles/ferrari-458-italia-amarilla.html"><img src="detalles/imagenes/ferrari-458-italia-amarillo/1.jpeg"></a>
+            </div>
+            <h3 class="title">Ferrari Italia 458</h3>
+          </div>
+
+          <div class="pic-container" style="order: 3;">
+            <div class="pic">
+              <a href="detalles/ferrari-458-italia-negra.html"><img src="detalles/imagenes/ferrari-458-italia-negro/1.jpeg"></a>
+            </div>
+            <h3 class="title">Ferrari Italia 458</h3>
+          </div>
+
+          <div class="pic-container" style="order: 4;">
+            <div class="pic">
+              <a href="detalles/ferrari-458-italia-roja.html"><img src="detalles/imagenes/ferrari-458-italia-rojo/1.jpeg"></a>
+            </div>
+            <h3 class="title">Ferrari Italia 458</h3>
+          </div>
+
+          <div class="pic-container" style="order: 5;">
+            <div class="pic">
+              <a href="detalles/ferrari-458-italia-f1.html"><img src="detalles/imagenes/ferrari-458-italia-f1/1.jpeg"></a>
+            </div>
+            <h3 class="title">Ferrari Italia 458 F1</h3>
+          </div>
+
+          <div class="pic-container" style="order: 6;">
+            <div class="pic">
+              <a href="detalles/lambo-huracan-evo-spyder.html"><img src="detalles/imagenes/lamborghini-huracan-evo-spyder/1.jpeg"></a>
+            </div>
+            <h3 class="title">Lamborghini Huracan EVO Spyder</h3>
+          </div>
+
+          <div class="pic-container" style="order: 7;">
+            <div class="pic">
+              <a href="detalles/lambo-huracan-spyder.html"><img src="detalles/imagenes/lamborghini-huracan-spyder/1.jpeg"></a>
+            </div>
+            <h3 class="title">Lamborghini Huracan Spyder</h3>
+          </div>
+
+          <div class="pic-container" style="order: 8;">
+            <div class="pic">
+              <a href="detalles/mercedez-benz-amg.html"><img src="detalles/imagenes/m-benz-amg/1.jpeg"></a>
+            </div>
+            <h3 class="title">Mercedes Benz AMG</h3>
+          </div>
+
+          <div class="pic-container" style="order: 9;">
+            <div class="pic">
+              <a href="detalles/porsche-cayenne-matrix.html"><img src="detalles/imagenes/porsche-cayenne-matrix/1.jpeg"></a>
+            </div>
+            <h3 class="title">Porsche Cayenne Matrix</h3>
+          </div>
+
+          <div class="pic-container" style="order: 10;">
+            <div class="pic">
+              <a href="detalles/porsche-cayenne-coupe-turbo.html"><img src="detalles/imagenes/porsche-cayenne/1.jpeg"></a>
+            </div>
+            <h3 class="title">Porsche Cayenne</h3>
+          </div>
+
+        </div>
+
+        <div class="next">&#10095;</div>
+
+      </div>
+    </div>
+
+    <div class="info" id="sobre-nosotros">
+      <div class="info-container">
+
+        <div class="img-container">
+          <img src="detalles/imagenes/quienes.jpg">
+        </div>
+      
+        <div>
+          <h2>QUIÉNES SOMOS</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et imperdiet libero, aliquet malesuada risus. 
+            Donec dignissim ante ultrices magna sodales tristique. Etiam eget massa sed quam feugiat lacinia. 
+            Nam facilisis ante faucibus, lacinia libero quis, pharetra ligula. 
+            Nunc mattis consectetur sapien, vestibulum malesuada tortor elementum in. 
+            Praesent tincidunt nibh nisi, et interdum nisl porttitor nec. Aliquam at dapibus tellus. Nulla facilisi. 
+            Ut diam nulla, pellentesque at vulputate in, pretium id massa. 
+            Quisque vehicula euismod lectus, id vestibulum turpis vulputate a. Nunc commodo neque ipsum, vel varius massa interdum eu. 
+            Ut dapibus lacus vitae massa ornare varius vitae at lectus. 
+            Integer velit erat, efficitur nec porta mollis, imperdiet ac odio. 
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacto bienvenidos" id="contacto">
+      <div class="informacion">
+        <h2>CONTÁCTENOS</h2>
+        <p>Avenida Siempreviva 742</p>
+        <p>mail.contacto@gmail.com</p>
+        <p>0303456-1234</p>
+      </div>
+      <img src="detalles/imagenes/contacto.jpg">
+    </div>
+
+    <footer>
+      <div class="redes">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-twitter"></a>
+      </div>
+      <div class="copyright">
+        <p>&copy;2020 por Autos Super Lujo</p>
+      </div>
+    </footer>
   </body>
+  
 </html>
+<script>
+
+  function scrollRight() {
+    const pic = document.querySelectorAll(".pic-container");
+    pic.forEach(element => {
+      const style = getComputedStyle(element)
+      let order = style.getPropertyValue('order')
+      if (order-1 < 0) {
+        element.style.order = pic.length-1
+      } else {
+        element.style.order = order-1
+      }
+    })
+  }
+
+  function scrollLeft() {
+    const pic = document.querySelectorAll(".pic-container");
+    pic.forEach(element => {
+      const style = getComputedStyle(element)
+      let order = parseInt(style.getPropertyValue('order'))
+      if (order+1 >= pic.length) {
+        element.style.order = 0;
+      } else {
+        element.style.order = order+1
+      }
+    })
+  }
+
+  const next = document.querySelector(".next");
+  next.addEventListener('click',scrollRight);
+
+  const prev = document.querySelector(".prev");
+  prev.addEventListener('click',scrollLeft);
+
+</script>
