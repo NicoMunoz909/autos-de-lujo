@@ -1,11 +1,13 @@
 * {box-sizing:border-box}
 
 body {
-  background-color: #ededed;
-  font-family: Gibson,Tahoma,Arial,sans-serif;
-  font-weight: 400;
-  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #191919;
+  text-align: center;
+  color: white;
   margin: 0;
+  width: 100%;
+  background-image: url("imagenes/fondo.jpg");
 }
 
 h2 {
@@ -14,100 +16,167 @@ h2 {
 }
 
 nav {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 60px;
   display: flex;
+  flex-direction: row;
+  text-align: left;
+  background-color: black;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 1px 2px rgb(156, 155, 155);
-  font-family: Gibson,Tahoma,Arial,sans-serif;
-  font-weight: 400;
-  font-size: 12px;
+  z-index: 10;
 }
 
-nav > * {
-  height: 100%;
+nav > .titulo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: fit-content;
+  padding-left: 3vw;
 }
 
-nav > a {
-  width: 10vw;
-  border-left: 1px solid hsl(330, 1%, 73%);
-  text-decoration: none !important;
+.titulo > img {
+  width: auto;
+  height: 29px;
+  padding-left: 10px;
+}
+
+nav > .links {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-right: 3vw;
+  display: flex;
+  width: fit-content;
+
+}
+
+.links > a {
+  margin-left: 2vw;
+  color: white;
   font-weight: 900;
-  color: rgb(221, 215, 215);
-  text-shadow: -1px -1px 1px rgb(128, 125, 125);
-  font-size: 18px;
-}
-
-nav > div {
-  font-weight: 900;
-  color: black;
-  text-shadow: -1px -1px 1px rgb(128, 125, 125);
-  font-size: 18px;
-}
-
-nav > a:hover {
-  box-shadow: 1px 1px 2px rgb(179, 176, 176) inset,
-              -1px -1px 2px rgb(179, 176, 176) inset;
-}
-
-nav > a:active {
   text-decoration: none;
 }
 
-footer {
-  margin-top: 5vh;
-  width: 100%;
-  height: 60px;
+.contenedor {
+  display: grid;
+  grid-template-columns: fit-content(100%) fit-content(100%);
+  grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
+  gap: 4vmin;
+  width: fit-content;
+  margin: auto;
+  margin-top: 100px;
+  background-color: black;
+}
+
+.titulo {
+  grid-column: 1/3;
+  grid-row: 1/2;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px -1px 2px rgb(156, 155, 155);
-  font-family: Gibson,Tahoma,Arial,sans-serif;
-  font-weight: 400;
-  font-size: 12px;
+  justify-content: space-between;
 }
 
-footer > a {
-  font-family: Gibson,Tahoma,Arial,sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  text-decoration:  none;
-  color: rgb(0, 0, 0);
+.deco-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 400px;
+  height: 200px;
 }
 
-footer > a:hover {
-  text-decoration: underline;
+#pic-izquierda {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  top: -100px;
+  left: -5px;
+}
+
+#pic-derecha {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  top: -100px;
+  right: -5px;
+}
+
+#pic-derecha, #pic-izquierda {
+  z-index: 1;
+}
+
+.auto-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slideshow-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, fit-content(100%));
+  width: 50vw;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: black;
+}
+
+.contacto {
+  padding: 2vw;
+  width: 20vw;
+  height: fit-content;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mySlides {
+  display: block;
+  width: 40vw;
+  height: 60vh;
+  margin: auto;
+  margin-top: 5vh;
+  overflow: hidden;
+}
+
+.mySlides > img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.sliders {
+  display: flex;
+  align-items: center;
+}
+
+.detalles {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: fit-content;
 }
 
 .fila-detalles {
   display: grid;
   grid-template-columns: 2fr 2fr;
   align-content: flex-start;
-}
-
-.contenedor {
-  display: grid;
-  grid-template-columns: fit-content(100%) fit-content(100%);
-  grid-template-rows: fit-content(100%) fit-content(100%);
-  gap: 3vmin;
-  width: fit-content;
-  margin: auto;
-  margin-top: 100px;
+  height: 4vh;
 }
 
 .funciones {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: fit-content(100%) fit-content(100%);
+  grid-column: 1/3;
+  grid-row: 3/4;
 }
 
 .funciones > #header {
@@ -121,74 +190,40 @@ footer > a:hover {
   margin-bottom: 1vh;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, fit-content(100%));
-  padding: 2vw 0 2vw 0;
-  width: 50vw;
-  margin: auto;
-  grid-column: 1/2;
-  grid-row: 1/2;
+.descripcion {
+  grid-column: 1/3;
+  grid-row: 4/5;
 }
 
-.sliders {
-  display: flex;
-  align-items: center;
-}
-
-.vehicle-details {
-  padding: 2vw;
-  width: 50vw;
-  margin: auto;
-  margin-top: 3vh;
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.vehicle-details > .detalles > .fila-detalles {
-  height: 4vh;
-}
-
-.contacto {
-  padding: 2vw;
-  width: 20vw;
-  height: fit-content;
-  margin: 0;
-  grid-column: 2/3;
-  grid-row: 1/2;
+footer {
+  margin: 100px 0 0 0;
+  width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: black;
+}
+
+.redes {
+  display: flex;
+}
+
+.redes > a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.redes >a:hover {
+  text-decoration: none;
 }
 
 .box {
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 1px 1px 2px rgb(175, 173, 173);
+  background-color: black;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: block;
-  width: 40vw;
-  height: 60vh;
-  margin: auto;
-  margin-top: 5vh;
-  overflow: hidden;
-}
-
-img {
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  margin: auto;
-}
-
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   width: auto;
@@ -203,38 +238,15 @@ img {
   background-color: rgb(150, 150, 150);
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -251,7 +263,6 @@ img {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
