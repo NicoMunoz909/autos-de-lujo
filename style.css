@@ -19,6 +19,7 @@ nav {
   background-color: black;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0 !important;
 }
 
 nav > .titulo {
@@ -60,7 +61,7 @@ a:hover {
 .bienvenidos {
   display: flex;
   background-color: black;
-  margin-top: 20vh;
+  margin-top: 128px !important;
   align-items: center;
 }
 
@@ -157,7 +158,7 @@ a:hover {
   position: relative;
   top: 120px;
   color: white;
-  width: 100px;
+  width: 480px;
   font-size: 40px;
 }
 
@@ -191,6 +192,10 @@ a:hover {
   height: auto;
   top: -610px;
   left: -195px;
+}
+
+.info-container > .texto {
+  padding: 20px;
 }
 
 .contacto {
@@ -239,4 +244,17 @@ footer {
 
 .redes >a:hover {
   text-decoration: none;
+}
+
+.rectangulo {
+  margin-top: 60px;
+}
+
+@media (max-width: 1024px) {
+  .rectangulo {
+    width: 1280px;
+  }
+  .prev, .next {
+    width: 380px;
+  }
 }
