@@ -38,7 +38,6 @@ nav > .titulo {
 nav > .links {
   font-size: 15px;
   font-weight: bold;
-  padding-top: 2vh;
   padding-left: 1vw;
   padding-right: 3vw;
   display: flex;
@@ -224,7 +223,7 @@ a:hover {
 footer {
   margin: 100px 0 0 0;
   width: 100%;
-  height: 100px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,10 +250,45 @@ footer {
 }
 
 @media (max-width: 1024px) {
+
   .rectangulo {
     width: 1280px;
   }
+
+  nav {
+    height: 80px;
+  }
+
+  .links > a {
+    font-size: 20px;
+  }
+
+  .bienvenidos {
+    margin-top: 140px;
+  }
+
+  .bienvenidos > div > p {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
   .prev, .next {
     width: 380px;
   }
+
+  .contacto > div > p {
+    font-size: 30px;
+  }
+
+  .redes > a {
+    font-size: 30px;
+  }
+
+  .copyright > p {
+    font-size: 30px;
+  }
+
 }
